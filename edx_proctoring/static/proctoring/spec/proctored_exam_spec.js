@@ -10,8 +10,8 @@ describe('ProctoredExamView', function () {
             '<a href="<%= exam_url_path %>"> <%= exam_display_name %> </a>' +
             '" as a proctored exam. The timer on the right shows the time remaining in the exam' +
             '<span class="exam-timer-clock"> <span id="time_remaining_id">' +
-            '<b> </b> <a id="toggle_timer" href="#" title="Hide Timer">' +
-            '<i class="fa fa-eye-slash" aria-hidden="true"></i></a>' +
+            '<b> </b> <button id="toggle_timer" title="Hide Timer" aria-label="Hide Timer">' +
+            '<i class="fa fa-eye-slash" aria-hidden="true"></i></button>' +
             '</span> </span>' +
             '</div>' +
             '</script>'+

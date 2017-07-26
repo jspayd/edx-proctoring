@@ -182,10 +182,12 @@ var edx = edx || {};
             if (timer.hasClass('timer-hidden')) {
                 timer.removeClass('timer-hidden');
                 button.attr('title', gettext('Hide Timer'));
+                button.attr('aria-label', gettext('Hide Timer'));
                 icon.removeClass('fa-eye').addClass('fa-eye-slash');
             } else {
                 timer.addClass('timer-hidden');
                 button.attr('title', gettext('Show Timer'));
+                button.attr('aria-label', gettext('Show Timer'));
                 icon.removeClass('fa-eye-slash').addClass('fa-eye');
             }
             event.stopPropagation();
